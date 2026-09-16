@@ -1,5 +1,5 @@
 {
-  "name": "browser-tsx-sandbox",
+  "name": "web-player-render-video",
   "version": "0.10.0",
   "description": "Pure client-side TSX compiler and sandbox evaluator with dynamic NPM library loading.",
   "type": "module",

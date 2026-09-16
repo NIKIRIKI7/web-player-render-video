@@ -5,8 +5,10 @@ export default defineConfig({
     'src/index.ts',
     'src/player.ts',
     'src/export/browser-export.ts',
+    'src/export/client-ffmpeg-export.ts',
     'src/plugins/tailwind-plugin.ts',
     'src/core/hmr.ts',
+    'src/ffmpeg.ts',
   ],
   format: ['esm', 'cjs'],
   dts: true,
@@ -24,5 +26,6 @@ export default defineConfig({
     'remotion',
     'tailwindcss',
     'postcss',
+    'playwright',
   ],
 });

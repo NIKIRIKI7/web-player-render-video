@@ -52,6 +52,9 @@ export type {
   ExportQuality,
 } from './export/browser-export';
 
+export { exportViaFfmpegBackend } from './export/client-ffmpeg-export';
+export type { ClientFfmpegExportOptions } from './export/client-ffmpeg-export';
+
 export { extractBareImports, scanImports, resolveVfsPath, stripComments } from './compiler/analyzer';
 export type { ScanResult } from './compiler/analyzer';
 export {

@@ -48,6 +48,9 @@ export type {
   ExportQuality,
 } from './export/browser-export';
 
+export { exportViaFfmpegBackend } from './export/client-ffmpeg-export';
+export type { ClientFfmpegExportOptions } from './export/client-ffmpeg-export';
+
 export { configureLogger } from './core/logger';
 export { extractSceneMetadata } from './core/scene-metadata';
 export type { SceneMetadata } from './core/scene-metadata';

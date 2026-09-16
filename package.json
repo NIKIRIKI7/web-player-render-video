@@ -24,6 +24,16 @@
       "import": "./dist/export/browser-export.js",
       "require": "./dist/export/browser-export.cjs"
     },
+    "./export/client-ffmpeg-export": {
+      "types": "./dist/export/client-ffmpeg-export.d.ts",
+      "import": "./dist/export/client-ffmpeg-export.js",
+      "require": "./dist/export/client-ffmpeg-export.cjs"
+    },
+    "./ffmpeg": {
+      "types": "./dist/ffmpeg.d.ts",
+      "import": "./dist/ffmpeg.js",
+      "require": "./dist/ffmpeg.cjs"
+    },
     "./plugins": {
       "types": "./dist/plugins/tailwind-plugin.d.ts",
       "import": "./dist/plugins/tailwind-plugin.js",
@@ -73,6 +83,8 @@
     "render:features": "node render/render-features.mjs",
     "render:timeline": "node render/render-timeline.mjs",
     "render:voiceover": "node render/render-voiceover.mjs",
+    "render:fast": "node render/render-fast.mjs",
+    "benchmark": "node scripts/benchmark.mjs",
     "demo": "vite demo --open",
     "demo:build": "vite build demo",
     "verify:video": "node render/verify-video.mjs",
@@ -111,12 +123,14 @@
     "@types/react-dom": "^19.1.0",
     "jsdom": "^25.0.1",
     "lucide-react": "^1.45.0",
+    "playwright": "^1.63.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "remotion": "^4.0.524",
     "tsup": "^8.5.1",
     "typescript": "^5.6.3",
     "vite": "^5.4.21",
-    "vitest": "^2.1.8"
+    "vitest": "^2.1.8",
+    "ws": "^8.21.3"
   }
 }

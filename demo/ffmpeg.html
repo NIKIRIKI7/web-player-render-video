@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FFmpeg Studio Render Demo</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module">
+    import React from 'react';
+    import { createRoot } from 'react-dom/client';
+    import { FfmpegStudio } from './FfmpegStudio';
+
+    const root = createRoot(document.getElementById('root'));
+    root.render(React.createElement(FfmpegStudio));
+  </script>
+</body>
+</html>
